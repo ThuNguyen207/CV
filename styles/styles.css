@@ -1,0 +1,156 @@
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  margin-left: 50px; /* Same as the width of the sidenav */
+}
+
+
+
+body {
+color: black;
+font-family: Verdana, "Times New Roman", Helvetica, Arial, Courier, Tahoma;
+font-weight: normal;
+background-color: rgb(235, 232, 255);
+}
+
+h1 {
+/* background-color: rgba(0,0,555,0.3); */
+/* border-bottom: 1px solid black; */
+font-weight: bolder;
+text-align: left;
+}
+
+.under_line_extended {
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  text-align: left;
+}
+
+h2 {
+/* background-color: rgba(0,0,255,0.15); */
+text-align: left;
+}
+
+p {
+color: black;
+font-size: 20px;
+line-height: 1.5em
+
+}
+
+.p_small {
+  font-size: 15px;
+}
+
+.p_small2 {
+  font-size: 18px;
+  line-height: 1.0;
+}
+
+.para {
+color: green;
+font-size: 20px;
+line-height: 1.5em
+}
+ul {
+  line-height: 1.5;
+}
+
+ol {
+  line-height: 1.5;
+}
+
+.image {
+float: left;
+margin-right: 50px;
+
+}
+
+
+.row {
+  display: flex;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* uneven two columns*/
+.uneven_two_columns {
+  float: left;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.uneven_two_columns.left1 {
+  width: 15%;
+}
+.uneven_two_columns.right1 {
+  width: 85%;
+}
+
+/* /* 3 columns with un_equal width */
+.three_columns {
+  float: left;
+  padding: 0px;
+  /* height: 300px; */
+}
+
+.three_columns.left2 {
+  width: 15%;
+  /* padding-right: 20px; */
+}
+.column_narrow {
+  width: 70%;
+}
+.column_90 {
+  width: 90%;
+}
+.three_columns.middle2 {
+  width: 55%;
+}
+.three_columns.right2 {
+  width: 30%;
+}
+
+
+
+
+.row2 {
+  display: flex;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* /* two columns with eaqual width */
+.row2 .two_columns2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* background colors */
+.white {
+  background-color: white;
+}
+.dark-green {
+  background-color: green;
+}
+
+
+.PowerBI_video {
+  position:center;
+  z-index: -1;
+  width: 100%; 
+  height: 85%;
+  object-fit: cover;
+}
+
+.image_powerBI {
+  position:center;
+  z-index: -1;
+  width: 100%; 
+  height: 85%;
+  object-fit: cover;
+}

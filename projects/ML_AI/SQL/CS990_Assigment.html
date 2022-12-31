@@ -1,0 +1,1317 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Arial-BoldMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:ArialMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoHeader><b><span style='font-size:12.0pt;font-family:"Arial",sans-serif'>DATABASE
+FUNDAMENTALS – ASSIGMENT – STUDENT NUMER: 2021****9</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%;font-family:Arial-BoldMT'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>The logical design for the database</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Staff (<u>esnum</u>, ename, ephone,
+startingdate)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Technician (<u>techno</u>, esnum)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Supervise (<u>techno</u>, <u>superno</u>)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Module (<u>modcode</u>, title, credits,
+teachID, qualification, grade, esnum)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Online (<u>OID</u>, contenthours,
+modcode)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Inperson (<u>PID</u>, lectures, modcode,
+roomnumber)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>References (<u>PID</u>, <u>OID</u>)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Room (<u>roomnumber</u>, seats,
+dataprojecter)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>(note: superno is the technician number
+of supervisor)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%;font-family:Arial-BoldMT'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>SQL CREATE Statements</span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>a&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Staff table </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE STAFF (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              ESNUM NUMBER CONSTRAINT PK_STAFF
+PRIMARY KEY,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              ENAME CHAR(100) CONSTRAINT
+NO_NL_STAFF NOT NULL,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              EPHONE NUMBER,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5              STARTINGDATE DATE);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>b&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Technician table </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE TECHNICIAN (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              TECHNO NUMBER CONSTRAINT
+PK_TECHNICIAN PRIMARY KEY,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              ESNUM NUMBER CONSTRAINT
+REF_TECHNICIAN_1 REFERENCES STAFF(ESNUM));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>c&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Supervise table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE SUPERVISE (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              TECHNO NUMBER CONSTRAINT
+REF_SUPERVISE_1 REFERENCES TECHNICIAN(TECHNO),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              SUPERNO NUMBER CONSTRAINT REF_SUPERVISE_2
+REFERENCES TECHNICIAN(TECHNO),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              CONSTRAINT PK_SUPERVISE PRIMARY
+KEY(TECHNO,SUPERNO));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>d&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Module table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE MODULE (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              MODCODE CHAR(10) CONSTRAINT
+PK_MODULE PRIMARY KEY,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              TITLE CHAR(100),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              CREDITS NUMBER,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5              TEACHID NUMBER CONSTRAINT
+NO_NL_TEA NOT NULL,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  6              QUALIFICATION CHAR(50),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  7              GRADE CHAR(50),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  8              ESNUM NUMBER CONSTRAINT REF_MODULE
+REFERENCES STAFF(ESNUM));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>e&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Online table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE &quot;ONLINE&quot; (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              OID CHAR(10) CONSTRAINT PK_ONLINE
+PRIMARY KEY,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              CONTENTHOURS NUMBER,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              MODCODE CHAR(10) CONSTRAINT
+REF_ONLINE REFERENCES MODULE(MODCODE));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>f&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Room table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE ROOM (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              ROOMNUMBER NUMBER CONSTRAINT
+PK_ROOM PRIMARY KEY,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              SEATS NUMBER,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              DATAPROJECTER CHAR (10));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>g&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Inperson table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE INPERSON (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              PID CHAR(10) CONSTRAINT
+PK_INPERSON PRIMARY KEY,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              LECTURES NUMBER,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              MODCODE CHAR(10) CONSTRAINT
+REF_INPERSON_1 REFERENCES MODULE(MODCODE),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5              ROOMNUMBER NUMBER CONSTRAINT
+REF_INPERSON_2 REFERENCES ROOM (ROOMNUMBER));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>h&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>References table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; CREATE TABLE REFERENCES (</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2             PID CHAR(10) CONSTRAINT REF_REFER_1
+REFERENCES INPERSON (PID) ,</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3             OID CHAR(10) CONSTRAINT REF_REFER_2
+REFERENCES &quot;ONLINE&quot;(OID),</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4             CONSTRAINT PK_REFER PRIMARY
+KEY(PID,OID));</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Table created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%;font-family:Arial-BoldMT'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>SQL INSERT statements</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none'><span style='font-family:"Arial",sans-serif'>A limited set of data
+inserted is only enough rows to demonstrate the features of your design and
+queries, and scenario.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>a&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into Staff table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10001,'Tu
+Dong',07514826103,'10-Jun-18');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10003,'shu
+shan',07514534123,'05-Nov-16');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10004,'James
+Bowden',07514987134,'28-Feb-11');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10005,'Leo
+Wang',07514864167,'31-Mar-16');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10007,'lena
+Yin',07514198367,'05-Jan-22');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10009,'David
+Ng',07514182389,'17-May-18');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10008,'Ana
+Kurt',07514145953,'11-Dec-14');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10010,'Dan
+Pault',07514413823,'19-Jun-12');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10011,'Liu
+Bin',07514111222,'21-Oct-18');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10012,'Lars
+Hass',07514222333,'24-Nov-20');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10014,'Donna
+Irving',07514987654,'07-Jul-03');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10015,'Kyung
+Kwon',07514123456,'12-Feb-18');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10017,'Mang
+Ng',07514567890,'20-Feb-13');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10019,'Ryan
+Martin',07514888766,'09-May-16');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10020,'David
+Watt',07514555222,'23-Aug-18');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10024,'Hussa
+Sighn',07514876098,'20-Feb-20');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10025,'Krizt
+Hiller',07514456765,'04-Nov-14');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10026,'Iain
+Peers',07514098345,'19-May-12');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10028,'Leilei
+Tang',07514145643,'29-Mar-17');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO STAFF VALUES (10029,'Jane
+Thamm',07514345904,'30-May-15');</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Courier'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:Courier'>row created.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>b&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into Technician table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO TECHNICIAN VALUES (10,10005);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO TECHNICIAN VALUES (11,10007);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO TECHNICIAN VALUES (12,10010);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO TECHNICIAN VALUES (13,10020);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO TECHNICIAN VALUES (14,10009);</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Courier'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:Courier'>row created.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>c&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into Supervise table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO SUPERVISE VALUES (11,10);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO SUPERVISE VALUES (12,10);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO SUPERVISE VALUES (13,12);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO SUPERVISE VALUES (14,12);</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Courier'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:Courier'>row created.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>d&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into Module table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES
+('CS101','Database',10,302,'PhD','Reader',10008);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES
+('CS103','Econometrics',20,303,'PhD','Professor',10001);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('CS106','Risk
+Analysis',20,306,'Master','Lecturer',10029);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('CS107','Spatial
+Statistics',20,307,'PhD','Reader',10015);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES
+('MM108','Stochastic Modelling',20,308,'PhD','Professor',10014);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES
+('MM109','Business Simulation',10,309,'PhD','Professor',10012);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('MM110','Machine
+Learning',20,310,'PhD','Reader',10017);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES
+('MS113','Optimization',20,313,'PhD','Reader',10026);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('MS116','Big
+Data',10,316,'PhD','Professor',10011);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('MS117','Data Analytics',10,317,'Master','Lecturer',10025);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('CS118','Big
+Data Tools',10,318,'PhD','Lecturer',10028);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES
+('MM119','Principles of Finance',10,319,'PhD','Reader',10019);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO MODULE VALUES ('MS120','Income
+Analysis',20,320,'PhD','Professor',10024);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>e&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into Online table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON101',15,'CS101');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON103',17,'CS103');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON106',25,'CS106');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON107',27,'CS107');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON108',30,'MM108');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON109',15,'MM109');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON110',10,'MM110');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO &quot;ONLINE&quot; VALUES
+('ON113',16,'MS113');</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Courier'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:Courier'>row created.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>f&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into room table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO ROOM VALUES (11,50,'YES');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO ROOM VALUES (12,70,'YES');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO ROOM VALUES (13,60,'NO');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO ROOM VALUES (14,90,'NO');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO ROOM VALUES (15,100,'YES');</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Courier'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:Courier'>row created.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>g&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into Inperson table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO INPERSON VALUES
+('IN201',5,'MS116',11);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO INPERSON VALUES
+('IN202',8,'MS117',11);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO INPERSON VALUES
+('IN203',4,'CS118',12);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO INPERSON VALUES
+('IN204',5,'MM119',13);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO INPERSON VALUES
+('IN205',6,'MS120',13);</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Courier'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:Courier'>row created.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt;
+line-height:normal'><b><span style='font-family:"Arial",sans-serif'>h&gt;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Insert into References table</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO REFERENCES VALUES
+('IN201','ON101');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO REFERENCES VALUES
+('IN201','ON107');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO REFERENCES VALUES
+('IN202','ON110');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO REFERENCES VALUES
+('IN203','ON108');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO REFERENCES VALUES
+('IN204','ON113');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; INSERT INTO REFERENCES VALUES
+('IN205','ON103');</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>1 row created.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%;font-family:Arial-BoldMT'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Querying the database</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>a&gt; Question: how many teachers have
+been recruited since 2015 by grade ?</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; SELECT MODULE.GRADE, COUNT(MODULE.ESNUM)
+NUMBER_TEACHER</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2    FROM STAFF JOIN MODULE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3    ON STAFF.ESNUM=MODULE.ESNUM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4    WHERE STAFF.STARTINGDATE &gt;'31-Dec-14'</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5    GROUP BY MODULE.GRADE;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>Output&gt; </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>GRADE           NUMBER_TEACHER</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>--------------- --------------</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Reader                       2</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Professor                    4</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Lecturer                                                 2
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>                   </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>b&gt; Question: what module's name have
+content hours is longer than the average content hours of online module?</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; SELECT MODULE.TITLE,
+&quot;ONLINE&quot;.CONTENTHOURS</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2    FROM &quot;ONLINE&quot; JOIN MODULE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3    ON &quot;ONLINE&quot;.MODCODE=MODULE.MODCODE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4    WHERE &quot;ONLINE&quot;.CONTENTHOURS &gt; (
+SELECT AVG(CONTENTHOURS)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5                                                                      FROM
+&quot;ONLINE&quot; );</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>Output&gt; </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>TITLE                          CONTENTHOURS</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>------------------------------ ------------</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Risk Analysis                            25</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Spatial Statistics                       27</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Stochastic Modelling                     30</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>c&gt; Question: Which inperson module
+has the most lectures taught in each room? print module code, room number, and
+number of lectures</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; SELECT MODCODE, ROOMNUMBER, LECTURES</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2              FROM INPERSON</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3              WHERE LECTURES = (SELECT
+MAX(LECTURES)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4                                             FROM
+INPERSON X</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5                                             WHERE
+INPERSON.ROOMNUMBER=X.ROOMNUMBER);</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>Output&gt; </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>MODCODE    ROOMNUMBER   LECTURES</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>---------- ---------- ----------</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>MS117              11          8</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>CS118              12          4</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>MS120              13          6</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>d&gt; Answer question d</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; SELECT ONLINE_TITLE,HOURS, INPERSON_TITLE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2  FROM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3  (SELECT &quot;ONLINE&quot;.OID, MODULE.TITLE
+ONLINE_TITLE, &quot;ONLINE&quot;.CONTENTHOURS HOURS</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              FROM MODULE JOIN
+&quot;ONLINE&quot;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5              ON
+MODULE.MODCODE=&quot;ONLINE&quot;.MODCODE) ONLINETITLE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  6  LEFT JOIN REFERENCES</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  7  ON ONLINETITLE.OID=REFERENCES.OID</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  8  LEFT JOIN</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  9              (SELECT INPERSON.PID, MODULE.TITLE
+INPERSON_TITLE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'> 10            FROM INPERSON JOIN MODULE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'> 11            ON MODULE.MODCODE=INPERSON.MODCODE)
+INPERSONTITLE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'> 12  ON REFERENCES.PID=INPERSONTITLE.PID;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>Output&gt; </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>ONLINE_TITLE                        HOURS
+INPERSON_TITLE</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>----------------------------------- -----
+-------------------------------</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Database                               15 Big Data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Econometrics                           17 Income
+Analysis</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Risk Analysis                          25</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Spatial Statistics                     27 Big Data</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Stochastic Modelling                   30 Big Data
+Tools</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Business Simulation                    15</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Machine Learning                       10 Data
+Analytics</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Optimization                           16
+Principles of Finance</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>8 rows selected.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>e&gt; Answer question e</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SQL&gt; SELECT S1.ENAME SUPERVISOR_NAME, S2.ENAME
+TECHNICIAN_NAME</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  2  FROM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  3  (SELECT X1.ESNUM SUPER_ESNUM,X2.ESNUM
+TECH_ESNUM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  4              FROM SUPERVISE RIGHT JOIN
+TECHNICIAN X1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  5              ON SUPERVISE.SUPERNO=X1.TECHNO</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  6              LEFT JOIN TECHNICIAN X2</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  7              ON SUPERVISE.TECHNO=X2.TECHNO) X</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  8  JOIN STAFF S1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>  9  ON S1.ESNUM=X.SUPER_ESNUM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'> 10  LEFT JOIN STAFF S2</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'> 11  ON S2.ESNUM=X.TECH_ESNUM;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><i><span
+style='font-family:"Arial",sans-serif'>Output&gt; </span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>SUPERVISOR_NAME      TECHNICIAN_NAME</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>-------------------- --------------------</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Leo Wang             lena Yin</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Dan Pault            David Ng</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Leo Wang             Dan Pault</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>Dan Pault            David Watt</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>David Ng</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>lena Yin</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>David Watt</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>7 rows selected.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:Courier'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%;font-family:Arial-BoldMT'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-family:"Arial",sans-serif'>Critique</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:150%'><b><u><span
+style='font-family:"Arial",sans-serif'>Functional Dependency </span></u></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>- <b>Staff:</b>             esnum </span><span
+style='font-family:Wingdings'>à</span><span style='font-family:"Arial",sans-serif'>
+ename, ephone, startingdate.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>- <b>Online:</b>          OID </span><span
+style='font-family:Wingdings'>à</span><span style='font-family:"Arial",sans-serif'>
+contenthours, modcode. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>- Inperson</span></b><span
+style='font-family:"Arial",sans-serif'>:       PID </span><span
+style='font-family:Wingdings'>à</span><span style='font-family:"Arial",sans-serif'>
+lectures, modcode, roomnumber.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>- Room:</span></b><span
+style='font-family:"Arial",sans-serif'>            roomnumber </span><span
+style='font-family:Wingdings'>à</span><span style='font-family:"Arial",sans-serif'>
+seats, dataprojecter.  </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>- Technician</span></b><span
+style='font-family:"Arial",sans-serif'>:    techno </span><span
+style='font-family:Wingdings'>à</span><span style='font-family:"Arial",sans-serif'>
+esnum. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Five tables (Staff, Online, Inperson,
+Room, Technician) are all in third normal form. Because have only one primary
+key and there is not any transitive dependency between non-key attributes.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>- Supervise</span></b><span
+style='font-family:"Arial",sans-serif'>:     techno </span><span
+style='font-family:Wingdings'>à</span><span style='font-family:"Arial",sans-serif'>
+superno </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>(One technician have no more than one
+supervisor, we can identify supervisor base on the information of technician
+who is supervised)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>- References</span></b><span
+style='font-family:"Arial",sans-serif'>:  OID </span><span style='font-family:
+Wingdings'>à</span><span style='font-family:"Arial",sans-serif'> PID </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>(One online module is referred by no
+more than one in-person module, we can identify in-person module’s PID for any OID
+which appear in References table.)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>Two tables (Supervise and References) 
+are not in third normal form, because they have not any non-key attribute.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin:0cm;line-height:normal'><b><span
+style='font-family:"Arial",sans-serif'>- Module table: </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>modcode </span><span style='font-family:
+Wingdings'>à</span><span style='font-family:"Arial",sans-serif'> title,
+credits, teachID</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>teachID </span><span style='font-family:
+Wingdings'>à</span><span style='font-family:"Arial",sans-serif'> qualification,
+grade, esnum</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>The Module table is not in third normal
+form. Because qualification, grade, and esnum are transitively dependent on
+modcode. It is in second normal form because it has only one primary key
+(modcode).</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><u><span
+style='font-family:"Arial",sans-serif'>Critique</span></u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:"Arial",sans-serif'>Strengths: </span></b><span
+style='font-family:"Arial",sans-serif'>This database structure reduces
+redundancy, loss data during maintenance, and anomalies, helps to cut down
+space. This database has not null values.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;text-indent:-14.2pt;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-family:"Arial",sans-serif'>Weaknesses: </span></b><span
+style='font-family:"Arial",sans-serif'>There are many tables, so it makes the
+query/update process is more complex. I choose this solution because this
+disadvantage trades off with all the advantages above. Additionally, in theory,
+Module table violates third normal form, so it may have maintenance problems.
+However, in reality, all teachers </span><span style='font-family:ArialMT'>are
+responsible for one module</span><span style='font-family:"Arial",sans-serif'>,
+so if a module is removed, this module’s teacher will be assigned new module. We
+will alter module for them instead of deleting teacher’s data. Therefore,
+Module table’s problem is not big deal.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin:0cm;line-height:normal'><span
+style='font-family:"Arial",sans-serif'>(critique’s words: 295)</span></p>
+
+</div>
+
+</body>
+
+</html>
